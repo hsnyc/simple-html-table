@@ -1,0 +1,21 @@
+{
+  "name": "emails",
+  "version": "1.0.0",
+  "description": "Dir for all HTML Emails",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://henryathes@gitlab.com/health-e-systems/email/master.git"
+  },
+  "keywords": [
+    "Pardot",
+    "Email"
+  ],
+  "author": "Henry Sanchez",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/heswebdev/preference-page#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2"
+  }
+}
