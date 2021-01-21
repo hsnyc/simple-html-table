@@ -1,3 +1,9 @@
+<!-- 
+    Developer: @hsnyc
+    Date: Jan 21, 2021
+    Modified from: https://codepen.io/paulobrien/pen/LBrMxa
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,7 +30,7 @@
       }
       .table-scroll table {
         width: 100%;
-        min-width: 1280px;
+        min-width: 860px;
         margin: auto;
         border-collapse: separate;
         border-spacing: 0;
@@ -35,11 +41,19 @@
       .table-scroll th,
       .table-scroll td {
         padding: 5px 10px;
-        vertical-align: top;
+        /* vertical-align: top; */
       }
 
       .table-scroll tbody tr:nth-child(even) {
         background-color: #f8f9fa;
+        }
+
+        .table-scroll tbody tr:nth-child(even) th {
+        background-color: #f8f9fa;
+        }
+
+        .table-scroll tbody tr:nth-child(odd) th {
+        background-color: #fff;
         }
 
       .table-scroll thead th {
@@ -70,11 +84,24 @@
         position: sticky;
         left: 0;
         z-index: 2;
-        background: rgb(245, 245, 245);
+        background-color: #fff;
       }
       thead th:first-child,
       tfoot th:first-child {
         z-index: 5;
+      }
+
+      .green-bullet,
+      .green-cross {
+          text-align: center;
+          color: #89C97D;
+          font-size: 32px;
+      }
+
+      @media screen and (max-width: 860px){
+        th:first-child {
+        box-shadow: 1px -2px 4px #f1f1f1;
+      }
       }
     </style>
   </head>
@@ -98,77 +125,87 @@
         <tbody>
           <tr>
             <th>Homelink</th>
-            <td>sdfsdfs</td>
-            <td><a href="#">Cell content longer</a></td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td></td>
+            <td class="green-bullet">&bullet;</td>
           </tr>
           <tr>
             <th>OCCM</th>
-            <td>Cell content</td>
-            <td>Cell content longer</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td></td>
+            <td class="green-bullet">&bullet;</td>
           </tr>
           <tr>
             <th>MedRisk</th>
-            <td>Cell content</td>
-            <td><a href="#">Cell content longer</a></td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="green-bullet">&bullet;</td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th>SPNet</th>
-            <td>Cell content</td>
-            <td>Cell content longer</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="green-bullet">&bullet;</td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th>ProCare</th>
-            <td>Cell content</td>
-            <td>Cell content longer</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
+            <td></td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
           <tr>
             <th>Orchid</th>
-            <td>Cell content</td>
-            <td>Cell content longer</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td></td>
+            <td class="green-bullet">&bullet;</td>
+            <td></td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-bullet">&bullet;</td>
           </tr>
           <tr>
             <th>AVO</th>
-            <td>Cell content</td>
-            <td>Cell content longer</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
-            <td>Cell content</td>
+            <td></td>
+            <td class="green-bullet">&bullet;</td>
+            <td class="green-cross">&#x271D;</td>
+            <td class="green-cross">&#x271D;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
           </tr>
         </tbody>
         <!-- <tfoot>
