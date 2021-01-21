@@ -1,4 +1,4 @@
-## Simple HTML Table##
+# Simple HTML Table
 
-# Uncomment footer if needed
-# Add height to table to make rows scroll
+### Uncomment footer if needed 
+### Add height to make rows scroll
